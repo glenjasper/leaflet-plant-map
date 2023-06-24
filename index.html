@@ -116,7 +116,7 @@
             const tile_Esri_DeLorme = 'https://server.arcgisonline.com/ArcGIS/rest/services/Specialty/DeLorme_World_Base_Map/MapServer/tile/{z}/{y}/{x}.png';
             const tile_Esri_WorldTopoMap = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}.png';
             const tile_Esri_NatGeoWorldMap = 'https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}.png';
-            const tile_Wikimedia = 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png';
+            //const tile_Wikimedia = 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png';
             const tile_GeoportailFrance_ignMaps = 'https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE=normal&TILEMATRIXSET=PM&FORMAT=image/jpeg&LAYER=GEOGRAPHICALGRIDSYSTEMS.MAPS&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}';
 
             //var defaultBase = L.tileLayer.provider('Stamen.TonerLite').addTo(mymap);
@@ -129,7 +129,7 @@
                 'ESRI.WorldTopoMap': L.tileLayer(tile_Esri_WorldTopoMap, { attribution }),
                 'ESRI.NatGeoWorldMap': L.tileLayer(tile_Esri_NatGeoWorldMap, { attribution }),
                 'USGS.TNM': L.tileLayer.provider('USGSTNM'),
-                'Wikimedia': L.tileLayer(tile_Wikimedia, { attribution }),
+                //'Wikimedia': L.tileLayer(tile_Wikimedia, { attribution }),
             };
 
             // add layer switch control
